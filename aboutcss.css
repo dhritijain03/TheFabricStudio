@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+body{
+	padding-right: 45px;
+	padding-left: 45px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 17px;
+}
+.parallax {
+    background-image:url("Images/aboutpic1.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	margin-top: -65px;
+}
+.parallaxp1{
+	text-align: center;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 70px;
+	padding-top: 320px;
+	color: #FFFFFF;
+}
+.parallaxp2{
+	text-align: center;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 25px;
+	margin-top: -85px;
+	color:#FFFFFF;
+}
+.aboutinfo{
+	padding: 0px 200px;
+	text-align: center;
+}
+.a-a1{
+	font-size: 40px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #84392D;
+}
+.a-a2{
+	font-size: 20px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: black;
+}
+.a-a3{
+	font-size: 35px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #84392D;
+}
+.a-a4{
+	font-size: 20px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: Black;
+	margin-top: -30px;
+}
+.a-a5 {
+	font-size: 35px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #84392D;
+	text-align: left;
+}
+.a-a6 {
+	font-size: 20px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: black;
+	text-align: left;
+
+}
+.a-a7{
+	font-size: 25px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color: #84392D;
+	text-align: left;
+}
+.mySlides {
+	display: none;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+	padding: 25px 0px;
+}
+.text {
+    color: black;
+    font-size: 25px;
+    padding: 10px 12px;
+    position: absolute;
+    width: 100%;
+	font-weight: bold;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.hr1{
+	border: 1px solid #84392D;
+	width: 70%;
+	margin-top: 60px;
+}
+.fa {
+    padding: 15px 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.footerp{
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 15px;
+}

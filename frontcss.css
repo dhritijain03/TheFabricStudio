@@ -1,0 +1,101 @@
+body{
+font-family: sans-serif;
+margin: 0;
+line-height: 1.5;
+}
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+.login-popup{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width:  100%;
+	height: 100%;
+	z-index: 1099;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.login-popup .box{
+	background-color: #ffffff;
+	width: 1000px;
+	height: 425px;
+	position: absolute;
+	top: 50%;
+	left: 47.5%; 
+	transform: translate(-50%,-50%);
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 50px;
+	}
+.login-popup .box .img-area{
+	flex:0 0 50%;
+	max-width: 50%;
+	position: relative;
+	overflow: hidden; 
+	
+}
+
+.login-popup .box .img-area .img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image:url('img/loginImage1.jpg');
+	background-size: cover;
+	position: relative;
+	background-position: center;
+}
+
+.login-popup .box .form{
+	flex:0 0 50%;
+	max-width: 50%;
+	padding: 40px;
+	padding-top: 150px;
+	
+}
+
+
+.login-popup .box .form .signup{
+	height: 45px;
+	margin-bottom: 30px;
+	width: 100%;
+	border: none;
+
+}
+
+
+.login-popup .box .form label{
+	font-size: 15px;
+	color: #555555;
+}
+.login-popup .box .form .btn{
+
+	width:100%;
+	background-color: #090909;
+	height:45px;
+	border: none;
+	margin-top: 10px;
+	border-radius: 25px;
+	font-size: 15px;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline-style: none;
+	text-decoration: none;
+	transition-duration: 0.4s;
+	color: white;
+}
+.login-popup .box .form .btn a{
+	outline-style: none;
+	text-decoration: none;
+	color:white;
+	color: green;
+	transition-duration: 0.4s;
+}
+
+.login-popup .box .form .btn a:hover{
+	color: green;
+	
+}

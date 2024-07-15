@@ -1,0 +1,81 @@
+body{
+	padding-right: 45px;
+	padding-left: 45px;
+}
+.header1 {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.header2 {
+    float: right;
+}
+
+.header2 a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 17px;
+}
+.logo{
+	width: 200px;
+	height: 200px;
+	margin-top: 35px;
+}
+.hr1{
+	border: 1px solid #84392D;
+	width: 70%;
+}
+.tandc{
+	text-align: center;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 40px;
+	font-weight: bold;
+	color: #84392D;
+	margin-top: -20px;
+}
+.tand1{
+	text-align: center;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 15px;
+	margin-top: -35px;
+}
+.info{
+	margin: 40px 150px;
+	box-shadow: 5px 5px 8px #888888;
+}
+.bbb{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 20px;
+	padding: 10px 20px 0px;
+}
+.aaa{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 30px;
+	padding: 10px 20px 0px;
+	color: #84392D;
+	font-weight: bold;
+}
+.ccc{
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 18px;
+	padding: 10px 20px 0px;
+	margin-left: 40px;
+}
+.fa {
+    padding: 15px 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.footerp{
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 15px;
+}

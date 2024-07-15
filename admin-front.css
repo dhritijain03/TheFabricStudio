@@ -1,0 +1,46 @@
+body{
+	font-family: sans-serif;
+}
+.introduction-section{
+	text-align: center; 
+  margin: 50px auto 0 auto; 
+
+  font-size: 30px;
+ 
+}
+.main{
+	border: 1px solid;
+	width: 50%;
+	height: 50%;
+	border: 1px solid;
+	padding: 20px;
+	margin-top: 10%;
+	margin-left: 40%
+	background-color:grey;
+	
+	text-align: center;
+	
+	
+
+} .btn{
+	
+	text-align: center;
+	
+	padding: 20px;
+	text-decoration: none;
+	outline-style: none;
+	
+	border: none;
+	border-radius: 25px;
+	font-size: 15px;
+	transition-duration: 0.4s;
+	font-color: green;
+	
+}
+a{
+	outline-style: none;
+	text-decoration: none;
+	
+	
+	transition-duration: 0.4s;
+}

@@ -1,0 +1,162 @@
+<?php 
+session_start();
+include_once("db_connect.php");
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Policy | The Fabric Store</title>
+<link rel="stylesheet" type="text/css" href="policycss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="Images/Logo/Logo 1 - Brown.png">
+</head>
+
+<body>
+	<div>
+		<ul class="header1">
+			<?php if (isset($_SESSION['user_id'])) { ?>
+				<b>
+					<li style="float:left; padding: 20px 18px 20px 0px;" class="header2"><a href="front.html">Hi, <?php echo $_SESSION['user_name']; ?></a></li>
+					<li style="padding: 20px 0px 20px 18px;" class="header2"><a href="logout.php" onclick="myFunction()" >Logout</a></li>
+					<li style="padding: 20px 18px 20px 18px;" class="header2"><a href="contactus1.php">Contact Us</a></li>
+					<li style="padding: 20px 18px 20px 18px;" class="header2"><a href="about1.php">About</a></li>
+					<li style="padding: 20px 18px 20px 18px;" class="header2"><a href="main1.php">Home</a></li>
+					<?php } else { ?>
+					<li style="float:left; padding: 20px 18px 20px 0px;" class="header2"><a href="#main">The Fabric Store</a></li>
+					<li style="padding: 20px 0px 20px 18px;" class="header2"><a href="front.html">Login</a></li>
+					<li style="padding: 20px 18px 20px 18px;" class="header2"><a href="contactus.html">Contact Us</a></li>
+					<li style="padding: 20px 18px 20px 18px;" class="header2"><a href="about.html">About</a></li>
+					<li style="padding: 20px 18px 20px 18px;" class="header2"><a href="main.html">Home</a></li>
+				</b>
+			<?php } ?>
+		</ul>
+		<hr color="#CACACA" size=".5">
+	</div>
+	
+	<div>
+		<center><img src="Images/Logo/Logo 1 - Brown.png" alt="logo" class="logo"></center>
+		<p class="tandc">
+			Terms &amp; Conditions
+		</p>
+		<p class="tand1">
+			The Fabric Store
+		</p>
+	</div>
+	
+	<div class="info">
+		<p class="bbb">
+			These terms and conditions outline the rules and regulations for the use of The Fabric Store partnership deed Website. By accessing this website we assume you accept these terms and conditions. Do not continue to use The Fabric Store if you do not agree to take all of the terms and conditions stated on this page.
+		</p>
+		
+		<p class="aaa">TERMS OF USE</p>
+		
+		<p class="bbb">
+			The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same. If you do not agree to these Terms of Use, you may not use the services on the Platform, and we request you to do not use the website service. By search even merely using the Platform, you shall be contracting with The Fabric Store and you signify your acceptance to the Terms of Use and other The Fabric Store policies (including but not limited to the Cancellation &amp; Refund Policy, Privacy Policy ) as posted on the Platform from time to time, which takes effect on the date on which you download, install or use the Services, and create a legally binding arrangement to abide by the same.<br /><br />
+			The Platform is operated and owned by The Fabric Store Partnership Firm, a company incorporated under the Companies Act, 1956 and having its registered office:- The Fabric Store,SCO - 47,Chandigarh, Punjab - 160017, India For the purpose of these Terms of Use, wherever the context so requires, ”you” shall mean any natural or legal person who has agreed to become a Consumer or customer on the Platform by providing Registration Data while registering on the Platform as a registered user using any computer systems.<br /><br />
+			The Fabric Store enables transactions between participant Tailors/Boutique/associates and Consumers, dealing stitching and tailoring service (“ Platform Services”). The Consumers (“ Consumer/s”) can choose and place orders (“ Orders”) from variety of Designs listed and offered for stitching service by various neighbourhood associates including but not limited to the associates service , on the Platform and The Fabric Store enables delivery of such orders at select localities of serviceable cities across India (“Pickup/ Delivery Services”). The Platform Services and Pickup/Delivery Services are collectively referred to as “Services”.
+		</p>
+		
+		<p class="aaa">AMENDMENTS</p>
+		
+		<p class="bbb">
+			These Terms of Use are subject to modifications at any time. We reserve the right to modify or change these Terms of Use and other The Fabric Store policies at any time by posting changes on the Platform, and you shall be liable to update yourself of such changes, if any, by accessing the changes on the Platform. You shall, at all times, be responsible for regularly reviewing the Terms of Use and the other The Fabric Store policies and note the changes made on the Platform. Your continued usage of the services after any change is posted constitutes your acceptance of the amended Terms of Use and other The Fabric Store policies. As long as you comply with these Terms of Use, The Fabric Store grants you a personal, non-exclusive, non-transferable, limited privilege to access, enter, and use the Platform. By accepting these Terms of Use, you also accept and agree to be bound by the other terms and conditions and The Fabric Store policies (including but not limited to Cancellation &amp; Refund Policy, Privacy Policy and Notice and Take Down Policy) as may be posted on the Platform from time to time.
+		</p>
+		
+		<p class="aaa">The Fabric Store - Use of the Website</p>
+		
+		<p class="bbb">
+			You agree, undertake and confirm that Your use of Website shall be strictly governed by the following binding principles:
+			<br /><br />You shall not host, display, upload, modify, publish, transmit, update or share any information which:
+			<ol type="1" class="ccc">
+				<li>Belongs to another person and to which You does not have any right to;</li>
+				<li>Is grossly harmful, harassing, blasphemous, defamatory, obscene, pornographic, paedophilic, libellous, invasive of another's privacy, hateful, or racially, ethnically objectionable, disparaging, relating or encouraging money laundering or gambling, or otherwise unlawful in any manner whatever; or unlawfully threatening or unlawfully harassing including but not limited to "indecent representation of women" within the meaning of the Indecent Representation of Women (Prohibition) Act, 1986;</li>
+				<li>is misleading in any way;</li>
+				<li>is patently offensive to the online community, such as sexually explicit content, or content that promotes obscenity, paedophilia, racism, bigotry, hatred or physical harm of any kind against any group or individual;</li>
+				<li>harasses or advocates harassment of another person;</li>
+				<li>involves the transmission of "junk mail", "chain letters", or unsolicited mass mailing or "spamming";</li>
+				<li>promotes illegal activities or conduct that is abusive, threatening, obscene, defamatory or libellous;</li>
+				<li>infringes upon or violates any third party's rights [including, but not limited to, intellectual property rights, rights of privacy (including without limitation unauthorized disclosure of a person's name, email address, physical address or phone number) or rights of publicity];</li>
+				<li>promotes an illegal or unauthorized copy of another person's copyrighted work (see "Copyright complaint" below for instructions on how to lodge a complaint about uploaded copyrighted material), such as providing pirated computer programs or links to them, providing information to circumvent manufacture-installed copy-protect devices, or providing pirated music or links to pirated music files;</li>
+				<li>contains restricted or password-only access pages, or hidden pages or images (those not linked to or from another accessible page);</li>
+				<li>shall not be false, inaccurate or misleading;</li>
+			</ol>
+		</p>
+	
+		<p class="aaa">Cookies</p>
+	
+		<p class="bbb">We employ the use of cookies. By accessing The Fabric Store, you agreed to use cookies in agreement with the The Fabric Store partnership firm's Privacy Policy.<br><br>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
+	
+		<p class="aaa">Communications</p>
+		
+		<p class="bbb">When you use the The Fabric Store Platform, you agree and understand that you are communicating with The Fabric Store through electronic records and you consent to receive communications via electronic records from The Fabric Store periodically and as and when required. The Fabric Store may communicate with you by email or by such other mode of communication, electronic or otherwise. You specifically agree that The Fabric Store shall not be responsible for unauthorized access to or alteration of your transmissions or data, any material or data sent or received or not sent or received. Further, The Fabric Store will make best efforts to safeguard the confidentiality of your personally identifiable information available with it, but transmissions made by means of the internet cannot be guaranteed or made absolutely secure. By using this The Fabric Store Platform, you agree that The Fabric Store shall not be liable for disclosure of your information due to errors in transmission or unauthorized acts of third parties. Without prejudice to the foregoing you agree that The Fabric Store shall not be held liable or responsible for 'phishing attacks' on you. You may accept or decline the cookies when you accesses The Fabric Store Platform. It is the User’s responsibility to set his browser to alert him to accept or to reject cookies</p>
+	
+		<p class="aaa">Cancellations and Refunds</p>
+	
+		<ol type="1" class="ccc">
+			<li>Cancellation</li>
+			<ol type="i">
+				<li>As a general rule you shall not be entitled to cancel your order once you have received confirmation of the same. If you cancel your order after it has been confirmed. In case of cancellations for the reasons attributable to The Fabric Store or its Tailors and delivery partners, We shall not charge you any cancellation fee.</li>
+				<li>However, in the unlikely event of an item on your order being unavailable, we will contact you on the phone number provided to us at the time of placing the order and inform you of such unavailability. In such an event you will be entitled to cancel the entire order and shall be entitled to a refund in accordance with our refund policy.</li>
+				<li>We reserve the sole right to cancel your order in the following circumstance:</li>
+					<ol type="a">
+						<li>In the event of the designated address falls outside the delivery zone offered by us;</li>
+						<li>Failure to contact you by phone or email at the time of confirming the order booking;</li>
+						<li>Failure to deliver your order due to lack of information, direction or authorization from you at the time of delivery; or</li>
+						<li>Unavailability of all the items ordered by you at the time of booking the order;</li>
+					</ol>
+			</ol>
+			<li>Refunds</li>
+			<ol type="i">
+				<li>You shall be entitled to a refund only if you pre-pay for your order at the time of placing your order on the Platform and only in the event of any of the following circumstances:</li>
+					<ol type="a">
+						<li>Your order packaging has been tampered or damaged at the time of delivery;</li>
+						<li>Us cancelling your order due to (A) your delivery location following outside our designated delivery zones; (B) failure to contact you by phone or email at the time of confirming the order booking; or (C) failure to contact you by phone or email at the time of confirming the order booking; or</li>
+						<li>You cancelling the order at the time of confirmation due to unavailability of the items you ordered for at the time of booking.</li>
+					</ol>
+				<li>Our decision on refunds shall be at our sole discretion and shall be final and binding.</li>
+				<li>All refund amounts shall be credited to your account within 3-4 business days in accordance with the terms that may be stipulated by the bank which has issued the credit / debit card.</li>
+			</ol>
+		</ol>
+		
+		<p class="aaa">Terms of service</p>
+	
+		<p class="bbb">
+			The information, materials, Services available on the The Fabric Store Platform may inadvertently include inaccuracies, typographical errors, or outdated information, The Fabric Store is not responsible for and shall not be bound to honor typographical or pricing errors on the The Fabric Store Platform. The Fabric Store reserves the right to refuse or cancel orders at any time, including but not limited to the orders that contain incorrect prices or product descriptions, orders in which The Fabric Store believes the User has violated applicable laws or these terms, orders that The Fabric Store believes are harmful to The Fabric Store or orders that The Fabric Store believes are fraudulent or based on illegal, fraudulent or deceitful use/furnishing of information or based on false information. The Fabric Store neither warrants nor makes any representations regarding the quality, accuracy or completeness of any data, information, product or Service. The Fabric Store expressly disclaims any warranties whether express or implied about the accuracy, completeness, correctness, suitability, reliability, availability, timeliness, quality, continuity, performance, error free or uninterrupted operation/functioning, fitness for a particular purpose, workmanlike effort, non-infringement, lack of viruses or other harmful components of the Services and/or products.<br ><br >
+			The Fabric Store shall not be responsible for the delay or inability to use the The Fabric Store Platform unrelated functionalities, the provision of or failure to provide functionalities, or for any information, software, Services, functionalities and related graphics obtained through the The Fabric Store Platform, or otherwise arising out of the use of the The Fabric Store Platform, whether based on contract, tort, negligence, strict liability or otherwise. Further, The Fabric Store shall not be held responsible for non-availability of the The Fabric Store Platform during periodic maintenance operations or any unplanned suspension of access to the The Fabric Store Platform that may occur due to technical reasons or for any reason beyond The Fabric Store’s control. The User understands and agrees that any material or data downloaded or otherwise obtained through the The Fabric Store Platform is done entirely at their own discretion and risk and they will be solely responsible for any damage to their computer systems or loss of data that results from the download of such material or data. The Fabric Store accepts no liability for any errors or omissions, with respect to any information provided to the User.
+		</p>
+	
+		<p class="aaa">Contact Us</p>
+	
+		<p class="bbb">
+			All comments, queries and requests relating to our use of your information are welcomed and should be addressed to Mail contact@thefabricstore.com or,<br><br>
+			The Fabric Store Partnership<br>
+			SCO - 47<br>
+			Chandigarh, Punjab - 160017, India<br>
+			Phone: +91 - 9000390003<br>
+			Email: contact@thefabricstore.com
+		</p>
+		
+		<p class="aaa">...</p>
+	</div>
+	
+	<hr class="hr1">
+	
+	<div class="footer">
+		<br />
+		<center>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-linkedin"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<p class="footerp">&copy;2021 by The Fabric Store</p>
+		</center>
+	</div>
+	
+<script>
+	function myFunction() {
+		alert("Are you sure you want to logout?");
+	}
+</script>
+</body>
+</html>
